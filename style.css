@@ -1,0 +1,228 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #77aade;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.content-box {
+    padding: 10px;
+}
+
+.marconi-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.image-placeholder {
+    flex: 1;
+    min-width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+}
+
+.marconi-info ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #e6e6e6;
+    color: #333;
+    font-weight: bold;
+}
+
+.tabela-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    background: #f7f9fc;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tabela-ondas {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.tabela-ondas th {
+    background-color: #004d99;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.tabela-ondas td {
+    padding: 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.tabela-ondas tr:nth-child(even) td {
+    background-color: #eef5ff;
+}
+
+.tabela-ondas td strong {
+    color: #004d99;
+}
+
+.saude-info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-left: 5px solid #00bcd4;
+}
+
+.saude-text {
+    flex: 3;
+}
+
+.saude-info .image-placeholder {
+    height: 100px;
+    min-width: 100px;
+    flex: 1;
+    background-color: #a7eff5;
+}
+
+.riscos {
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px dashed #e74c3c;
+    background-color: #fceae8;
+    border-radius: 5px;
+}
+
+.riscos h4 {
+    color: #c0392b;
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .marconi-info, .saude-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-placeholder {
+        margin-bottom: 15px;
+    }
+
+    .tabela-ondas th, .tabela-ondas td {
+        font-size: 0.9rem;
+    }
+}
+
+.navegacao-pagina {
+    text-align: right; 
+    padding: 0 20px;
+}
+
+.botao-proximo {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #004d99; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-proximo:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.botao-proximo:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
